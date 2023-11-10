@@ -29,7 +29,7 @@ public class OpenAISettingsState implements PersistentStateComponent<OpenAISetti
     public String apiHost = "api.openai.com";
     public String model = "gpt-3.5-turbo";
 
-    public boolean enableContext = true;
+    public boolean enableContext = false;
 
     public boolean enableAvatar = true;
 
