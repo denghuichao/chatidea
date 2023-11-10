@@ -39,7 +39,7 @@ dependencies {
     implementation("com.squareup.retrofit2:adapter-rxjava2:2.9.0")
     implementation("com.squareup.retrofit2:converter-jackson:2.9.0")
     implementation("com.fasterxml.jackson.core:jackson-databind:2.12.4")
-    implementation("org.commonmark:commonmark:0.20.0")
+    implementation("org.commonmark:commonmark:0.21.0")
 }
 
 // Configure Gradle IntelliJ Plugin - read more: https://github.com/JetBrains/gradle-intellij-plugin
