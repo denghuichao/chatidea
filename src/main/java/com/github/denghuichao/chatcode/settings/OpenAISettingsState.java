@@ -25,8 +25,8 @@ import java.util.Map;
 public class OpenAISettingsState implements PersistentStateComponent<OpenAISettingsState> {
     public long timeout = 50000L;
 
-    public String apiKey = "fk206783-6OcY3BeVWgKXsnbnCyaXPOHwI0LtwLQn";
-    public String apiHost = "openai.api2d.net";
+    public String apiKey = "NOT SET";
+    public String apiHost = "api.openai.com";
     public String model = "gpt-3.5-turbo";
 
     public boolean enableContext = true;
