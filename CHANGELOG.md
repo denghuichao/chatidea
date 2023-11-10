@@ -2,10 +2,10 @@
 
 # chatcode Changelog
 
-## [Unreleased]
+## Unreleased
 
-## [0.0.1]
+## 0.0.1
 
 ### Added
 
-+ First MVP Version
+- First MVP Version
