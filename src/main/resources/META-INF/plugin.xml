@@ -1,18 +1,35 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.denghuichao.chatidea</id>
-    <name>chatidea Template</name>
-    <vendor>denghuichao</vendor>
+    <id>com.github.denghuichao.chatcode</id>
+    <name>ChatCode</name>
+    <vendor email="denghuichao90@gmail.com">denghuichao</vendor>
 
     <depends>com.intellij.modules.platform</depends>
-
-    <resource-bundle>messages.MyBundle</resource-bundle>
+    <depends>org.intellij.plugins.markdown</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.denghuichao.chatidea.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <toolWindow id="ChatCode" anchor="right" icon="/icons/toolWindow.svg" canCloseContents="true"
+                    factoryClass="com.github.denghuichao.chatcode.ChatCodeToolWindowFactory"/>
+        <applicationConfigurable parentId="tools"
+                                 instance="com.github.denghuichao.chatcode.settings.ChatCodeSettingsPanel"
+                                 id="com.github.denghuichao.chatcode.settings.ChatCode"
+                                 displayName="ChatCode"/>
+        <applicationService serviceImplementation="com.github.denghuichao.chatcode.settings.OpenAISettingsState"/>
+        <projectService serviceImplementation="com.github.denghuichao.chatcode.ui.action.SendAction"/>
+        <projectService serviceImplementation="com.github.denghuichao.chatcode.GPT35TurboHandler"/>
+        <iconMapper mappingFile="ChatCodeIconMappings.json"/>
     </extensions>
 
-    <applicationListeners>
-        <listener class="com.github.denghuichao.chatidea.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
+    <actions>
+        <group id="ChatCode" text="Chat Code Actions" description="Chat Code Actions">
+            <action id="AddUtAction"  class="com.github.denghuichao.chatcode.ui.action.editor.AddUtAction"/>
+            <action id="CodeReviewAction" class="com.github.denghuichao.chatcode.ui.action.editor.CodeReviewAction"/>
+            <action id="FindBugAction" class="com.github.denghuichao.chatcode.ui.action.editor.FindBugAction"></action>
+            <action id="OptimizeCodeAction" class="com.github.denghuichao.chatcode.ui.action.editor.OptimizeCodeAction"></action>
+            <action id="AddCommentAction" class="com.github.denghuichao.chatcode.ui.action.editor.AddCommentAction"/>
+            <separator/>
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+            <separator/>
+        </group>
+    </actions>
 </idea-plugin>

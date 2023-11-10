@@ -1,44 +1,43 @@
-# chatidea
+# ChatGPT
 
-![Build](https://github.com/denghuichao/chatidea/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
+[ChatGPT](https://chat.openai.com/chat) is a language model trained by OpenAI and can be used for a variety of tasks,
+including dialogue and text generation. ChatGPT is a neural network-based model that is trained on large amounts of
+human language data and is able to generate natural language text that is meaningful in a given context. The model can
+be used for many applications, such as natural language processing
+(NLP) and dialogue systems.
 
-## Template ToDo list
-- [x] Create a new [IntelliJ Platform Plugin Template][template] project.
-- [ ] Get familiar with the [template documentation][template].
-- [ ] Adjust the [pluginGroup](./gradle.properties), [plugin ID](./src/main/resources/META-INF/plugin.xml) and [sources package](./src/main/kotlin).
-- [ ] Adjust the plugin description in `README` (see [Tips][docs:plugin-description])
-- [ ] Review the [Legal Agreements](https://plugins.jetbrains.com/docs/marketplace/legal-agreements.html?from=IJPluginTemplate).
-- [ ] [Publish a plugin manually](https://plugins.jetbrains.com/docs/intellij/publishing-plugin.html?from=IJPluginTemplate) for the first time.
-- [ ] Set the `PLUGIN_ID` in the above README badges.
-- [ ] Set the [Plugin Signing](https://plugins.jetbrains.com/docs/intellij/plugin-signing.html?from=IJPluginTemplate) related [secrets](https://github.com/JetBrains/intellij-platform-plugin-template#environment-variables).
-- [ ] Set the [Deployment Token](https://plugins.jetbrains.com/docs/marketplace/plugin-upload.html?from=IJPluginTemplate).
-- [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
+[简体中文](https://github.com/denghuichao/ChatGPT/blob/main/README_CN.md) |
+[English](https://github.com/denghuichao/ChatGPT/blob/main/README.md)
+<br/>
 
-<!-- Plugin description -->
-This Fancy IntelliJ Platform Plugin is going to be your implementation of the brilliant ideas that you have.
+# About this project
 
-This specific section is a source for the [plugin.xml](/src/main/resources/META-INF/plugin.xml) file which will be extracted by the [Gradle](/build.gradle.kts) during the build process.
+This project is a plugin that supports ChatGPT running on JetBrains series IDE.
 
-To keep everything working, do not remove `<!-- ... -->` sections. 
-<!-- Plugin description end -->
+![code-generation](https://github.com/denghuichao/ChatGPT/assets/28687074/2cad58e3-f388-4f98-8652-9196a7978545)
 
-## Installation
+![code-insert-to-editor](https://github.com/denghuichao/ChatGPT/assets/28687074/c3e9d94e-81cb-4da4-9154-3555d72014c0)
 
-- Using the IDE built-in plugin system:
-  
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "chatidea"</kbd> >
-  <kbd>Install</kbd>
-  
-- Manually:
+![explain-codes](https://github.com/denghuichao/ChatGPT/assets/28687074/eb33c99d-fa45-4f08-8f23-e21e2cc2e935)
 
-  Download the [latest release](https://github.com/denghuichao/chatidea/releases/latest) and install it manually using
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
+![learn-binary-tree](https://github.com/denghuichao/ChatGPT/assets/28687074/1ee5698b-f392-4b4a-b39f-05efdb9836aa)
 
+# Installation
 
----
-Plugin based on the [IntelliJ Platform Plugin Template][template].
+- Install using the IDE's built-in plugin system:
 
-[template]: https://github.com/JetBrains/intellij-platform-plugin-template
-[docs:plugin-description]: https://plugins.jetbrains.com/docs/intellij/plugin-user-experience.html#plugin-description-and-presentation
+  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "ChatGPT"</kbd> >
+  <kbd>Install Plugin</kbd>
+
+# Getting Started
+
+Please see the document: [https://chatgpt.gold/getting-started/](https://chatgpt.gold/getting-started/)
+
+# License
+
+This project uses the "GNU General Public License Agreement V2". and additional restrictions: it is forbidden to use the
+code of this project to build other plug-in products of JetBrains Marketplace. Offenders will be punished.
+
+# Disclaimers
+
+This is not an official OpenAI product, and I am not responsible for any damage caused by the use of this plugin.

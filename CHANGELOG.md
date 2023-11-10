@@ -1,7 +1,11 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# chatidea Changelog
+# chatcode Changelog
 
 ## [Unreleased]
+
+## [0.0.1]
+
 ### Added
-- Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
+
++ First MVP Version

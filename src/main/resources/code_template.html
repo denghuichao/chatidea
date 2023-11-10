@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script>hljs.highlightAll();</script>
+  <style>
+     .body {
+      margin-top: 5px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      background-color: #%s;
+    }
+
+    .code-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      opacity: 0.3;
+      padding: 5px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .language-label {
+      font-weight: normal;
+    }
+
+    .copy-button {
+      cursor: pointer;
+      padding: 5px 10px;
+      color: inherit;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .copy-button:hover, .copy-button:active {
+      text-decoration: underline;
+    }
+
+    .pre {
+      margin: 0;
+    }
+  </style>
+  <script>
+    function copyCode() {
+      var codeElement = document.getElementById("code");
+      var range = document.createRange();
+      range.selectNode(codeElement);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      document.execCommand("copy");
+
+      var copiedElement = document.createElement("span");
+      copiedElement.innerText = "Copied";
+      copiedElement.style.color = "green";
+      copiedElement.style.marginLeft = "10px";
+
+      var codeHeader = document.querySelector(".code-header");
+      codeHeader.appendChild(copiedElement);
+
+      var copyButton = document.querySelector(".copy-button");
+      copyButton.style.display = "none";
+
+      setTimeout(function() {
+        codeHeader.removeChild(copiedElement);
+        copyButton.style.display = "inline";
+      }, 1000);
+
+      window.getSelection().removeAllRanges();
+    }
+  </script>
+</head>
+<body class="body">
+<div class="code-header">
+  <span class="language-label">%s</span>
+  <button class="copy-button" onclick="copyCode()">Copy</button>
+</div>
+<pre><code id="code" class="language-%s">
+%s
+</code></pre>
+</body>
+</html>
