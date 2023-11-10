@@ -10,11 +10,11 @@ import org.jetbrains.annotations.NotNull;
 public class GitHubAction extends DumbAwareAction {
 
     public GitHubAction() {
-        super(() -> "Denghuichao's GitHub", AllIcons.Vcs.Vendors.Github);
+        super(() -> "This plugin's GitHub", AllIcons.Vcs.Vendors.Github);
     }
 
     @Override
     public void actionPerformed(@NotNull AnActionEvent e) {
-        BrowserUtil.browse("https://github.com/denghuichao");
+        BrowserUtil.browse("https://github.com/denghuichao/chatidea");
     }
 }
