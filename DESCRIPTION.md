@@ -10,38 +10,8 @@ model can be used <br />for many applications, such as natural language processi
 
 <br/>
 
-## About this project
+## About this plugin
 
-This project is a plugin that supports ChatGPT running on JetBrains series IDE.
-
-[Homepage](https://plugins.jetbrains.com/plugin/20603-chatgpt) |
-[Docs/Preview](https://chatgpt.en.denghuichao.com) |
-[Github](https://github.com/denghuichao/ChatGPT) |
-[FAQ](https://chatgpt.en.denghuichao.com/faq/) |
-[Slack](https://join.slack.com/t/observercreator/shared_invite/zt-14g3dnzkx-FGJM_WgY~vj0bJINTHQSAA) |
-[Donate/Sponsor](https://chatgpt.en.denghuichao.com/donate/)
-
-## 微信公众号
-
-<img alt="微信公众号: 观察与创造" width="600" src="https://user-images.githubusercontent.com/28687074/224671786-ecb449a1-4901-4690-bef5-b8d03a8120fa.png" />
-
-## 简体中文
-
-[ChatGPT](https://chat.openai.com/chat)是一种语言模型，它由OpenAI训练，
-可以用于多种任务，包括对话和文本生成。ChatGPT 是一种基于神经网<br />络的模型，它使用 人类语言的大量样本进行训练，可以在给定上下文的情 况下生成有意义的自然语言文本。 该模型可以<br />
-用于许多应用，例如自然语言处理（NLP）和 对话系统。
-
-<br/>
-
-## 关于本项目
-
-这个项目是支持ChatGPT在JetBrains系列IDE上运行的一款插件。
-
-[主页](https://plugins.jetbrains.com/plugin/20603-chatgpt) |
-[文档/预览](https://chatgpt.cn.denghuichao.com) |
-[Github](https://github.com/denghuichao/ChatGPT) |
-[常见问题](https://chatgpt.cn.denghuichao.com/faq/) |
-[微信群](https://www.denghuichao.com/article/Wechat-group-is-now-open) |
-[捐赠/赞助](https://chatgpt.cn.denghuichao.com/donate/)
+This is a plugin powered by OpenAI and helps coders testing, optimizing, reviewing their code and improving their productivity.
 
 <!-- Plugin description end -->

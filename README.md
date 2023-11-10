@@ -1,4 +1,4 @@
-# ChatGPT
+# About ChatGPT
 
 [ChatGPT](https://chat.openai.com/chat) is a language model trained by OpenAI and can be used for a variety of tasks,
 including dialogue and text generation. ChatGPT is a neural network-based model that is trained on large amounts of
@@ -6,32 +6,22 @@ human language data and is able to generate natural language text that is meanin
 be used for many applications, such as natural language processing
 (NLP) and dialogue systems.
 
-[简体中文](https://github.com/denghuichao/ChatGPT/blob/main/README_CN.md) |
-[English](https://github.com/denghuichao/ChatGPT/blob/main/README.md)
-<br/>
 
 # About this project
 
-This project is a plugin that supports ChatGPT running on JetBrains series IDE.
-
-![code-generation](https://github.com/denghuichao/ChatGPT/assets/28687074/2cad58e3-f388-4f98-8652-9196a7978545)
-
-![code-insert-to-editor](https://github.com/denghuichao/ChatGPT/assets/28687074/c3e9d94e-81cb-4da4-9154-3555d72014c0)
-
-![explain-codes](https://github.com/denghuichao/ChatGPT/assets/28687074/eb33c99d-fa45-4f08-8f23-e21e2cc2e935)
-
-![learn-binary-tree](https://github.com/denghuichao/ChatGPT/assets/28687074/1ee5698b-f392-4b4a-b39f-05efdb9836aa)
+This is a plugin powered by OpenAI and helps coders testing, optimizing, reviewing their code and improving their productivity.
 
 # Installation
 
-- Install using the IDE's built-in plugin system:
+Install using the IDE's built-in plugin system:
 
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "ChatGPT"</kbd> >
-  <kbd>Install Plugin</kbd>
+<kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "ChatCode"</kbd> >
+<kbd>Install Plugin</kbd>
 
-# Getting Started
-
-Please see the document: [https://chatgpt.gold/getting-started/](https://chatgpt.gold/getting-started/)
+# Configuration And Usage
+![config](doc/setting.png "Magic Gardens")
+![u1](doc/u1.png "Magic Gardens")
+![u2](doc/u2.png "Magic Gardens")
 
 # License
 
