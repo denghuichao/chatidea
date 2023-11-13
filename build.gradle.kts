@@ -27,12 +27,12 @@ repositories {
 
 dependencies {
     implementation("com.google.code.gson:gson:2.10.1")
-    implementation("cn.hutool:hutool-http:5.8.12")
+    implementation("cn.hutool:hutool-http:5.8.23")
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
     implementation("com.squareup.okhttp3:okhttp-sse:4.10.0")
     implementation("commons-codec:commons-codec:1.15")
     implementation("com.alibaba.fastjson2:fastjson2:2.0.20")
-    implementation("cn.hutool:hutool-http:5.8.12")
+    implementation("cn.hutool:hutool-http:5.8.23")
     implementation("com.theokanning.openai-gpt3-java:api:0.11.1")
     implementation("com.theokanning.openai-gpt3-java:client:0.11.1")
     implementation("com.theokanning.openai-gpt3-java:service:0.11.1")
